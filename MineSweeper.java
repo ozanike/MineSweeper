@@ -50,6 +50,8 @@ public class MineSweeper {
             } else {
                 game = false;
                 System.out.println("Game Over !");
+                print(map);
+
             }
         }
     }
