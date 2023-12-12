@@ -28,7 +28,7 @@ public class MineSweeper {
         print(map);
         System.out.println("Oyun Basladi !");
         while (game) {
-            print(board);
+            //print(board);
             System.out.print("Satir Sayisi : ");
             row = scan.nextInt();
             System.out.print("Sutun Sayisi : ");
@@ -51,11 +51,9 @@ public class MineSweeper {
                 game = false;
                 System.out.println("Game Over !");
                 print(map);
-
             }
         }
     }
-
     public void checkMine(int row, int col) {
         if (map[row][col] == 0) {
             if ((col < colNumber - 1) && (map[row][col + 1] == -1)) {
